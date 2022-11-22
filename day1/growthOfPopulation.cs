@@ -30,18 +30,9 @@ class Arge {
       int years = 0;
       int percentInt = Convert.ToInt32(percent*100);
       int Amount = 0;
-      Console.Out.WriteLine(Amount);
-      Console.Out.WriteLine(percent);
-      Console.Out.WriteLine(aug);
-      Console.Out.WriteLine(p);
-      Console.Out.WriteLine(p0);
-
       while(p0 != p){
       Amount = (percentInt * p0)/100;
-        p0 = p0 + Amount + aug;
-        Console.Out.WriteLine("this is the current value");
-        Console.Out.WriteLine(p0);
-        
+        p0 = p0 + Amount + aug; 
       years++;
       }
       return years;

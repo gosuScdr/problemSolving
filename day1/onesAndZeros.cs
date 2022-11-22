@@ -23,16 +23,17 @@ namespace Solution
       public static int binaryArrayToNumber(int[] BinaryArray)
         {
    int total = 0;
-   int j =0;
-        for(int i = BinaryArray.Length-1; i>=0;i--){
+
+   for(int i = BinaryArray.Length-1; i>=0;i--)
+        {
 
     
   if(BinaryArray[i]  == 1){
     
-    total += (int)Math.Pow(2,j);
+    total += (int)Math.Pow(2,BinaryArray.Length -1 - i);
 
   }
-  j++;
+
   }
         return total;
       }
